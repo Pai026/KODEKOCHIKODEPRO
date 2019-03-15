@@ -15,6 +15,7 @@ $stmt->bind_param("sss",$_POST['State'],$_POST['Email_ID'],$_POST['Tpass']);
 $stmt->execute();
 
 echo "Signup Successful";
+header ("Location:/wordpress");
 $stmt->close();
 $conn->close();
 ?>
