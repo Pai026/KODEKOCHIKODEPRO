@@ -16,6 +16,7 @@ $stmt->bind_param("sisss", $_POST['OPname'], $_POST['OPphno'], $_POST['OPemail']
 $stmt->execute();
 
 echo"Signup successful";
+header ("Location:/wordpress");
 $stmt->close();
 $conn->close();
 ?>
