@@ -15,6 +15,7 @@ $stmt->bind_param("sssis",$_POST['Drname'],$_POST['Dept'],$_POST['Dremail'],$_PO
 $stmt->execute();
 
 echo "Signup Successful";
+header ("Location:/wordpress");
 $stmt->close();
 $conn->close();
 ?>
