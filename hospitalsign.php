@@ -15,6 +15,7 @@ $stmt->bind_param("ssis", $_POST['Hospital_name'], $_POST['Haddress'],$_POST['Hp
 $stmt->execute();
 
 echo "signup successfull";
+header ("Location:/wordpress" );
 $stmt->close();
 $conn->close();
 ?>
