@@ -15,6 +15,8 @@ $stmt->bind_param("sisiss", $_POST['Dname'],$_POST['LNO'],$_POST['Dpass'],$_POST
 $stmt->execute();
 
 echo "Signup Successfull";
+header('Location: Dverify.php');
+
 $stmt->close();
 $conn->close();
 ?>
