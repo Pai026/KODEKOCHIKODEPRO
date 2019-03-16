@@ -10,7 +10,8 @@ if(count($_POST)>0)
 	}
 	else
 	{
-		echo "You are successfully authenticated!";
+		header ("Location:/wordpress/trial3.html");
+
 	}
 }
 ?>
