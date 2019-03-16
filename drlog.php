@@ -6,7 +6,7 @@ if(count($_POST)>0) {
 	if($count==0) {
 		echo "Invalid Username or Password!";
 	} else {
-		echo "You are successfully authenticated!";
+		header("Location:/KODEKOCHIKODEPRO-master/DOCTORHOME.html");
 	}
 }
 ?>
