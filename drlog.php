@@ -6,7 +6,8 @@ if(count($_POST)>0) {
 	if($count==0) {
 		echo "Invalid Username or Password!";
 	} else {
-		header("Location:/KODEKOCHIKODEPRO-master/DOCTORHOME.html");
+		header("Location:/wordpress/DOCTORHOME.html");
+		
 	}
 }
 ?>

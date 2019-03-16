@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocation</title>
+	</head>
+	<body>
+		<a href ="#" id="get_location">Get Location</a>
+		<div id="map">
+			<iframe id="google_map" width="425" height="350" frameborder="0" scrolling="0" marginheight="0" marginwidth="0" src="/search"></iframe>
+		</div>
+		<script>
+		var c = function(pos){
+			var lat    = pos.coords.latitude,
+				long   = pos.coords.longitude,
+				coords = lat + ' , ' +long;
+			document.getElementById('google_map').setAttribute('src', 'https://www.google.com/search?hl=en&source=hp&ei=niOMXPOqH8u89QOPqaCgBg&q=' + coords + '&btnK=Google+Search&oq=' + coords + '&gs_l=psy-ab.3...1400.1400..1910...0.0..0.256.498.2-2......0....2j1..gws-wiz.....0.wJrmOes7s40');
+		}
+		document.getElementById('get_location').onclick = function() {
+			navigator.geolocation.getCurrentPosition(c);
+		return false;
+		}
+		</script>
+	</body>
+</html>
